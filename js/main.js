@@ -2,7 +2,10 @@ document.addEventListener('readystatechange', function (event) {
     switch (this.readyState) {
         case 'loading':
             break;
-    
+            
+        case 'complete':
+            window.dispatchEvent(new Event('hashchange'));
+            break;
         default:
             break;
     }
@@ -20,6 +23,22 @@ window.onscroll = function (event) {
     })
 }
 
+window.addEventListener('hashchange', function (event) {
+    var hash = window.location.hash;
+
+    var aHref = document.getElementById('navbar').querySelector('a[href="'+hash+'"]');
+    var aActive = document.getElementById('navbar').querySelector('a.active');
+
+    if (!aActive) return;
+    if (!aHref) return;
+
+    aActive.classList.remove('active');
+    aHref.classList.add('active');
+});
+
+document.getElementById("offcanvasMenu").addEventListener('hidden.bs.offcanvas', function (event) {
+    event.preventDefault();
+});
 
 var Modas80 = {
     Utils: {

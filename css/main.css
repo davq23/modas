@@ -1,20 +1,53 @@
-.m-auto {
-    margin: auto;
+@font-face {
+    font-family: 'retro';
+    src: url('fonts/Retronoid.ttf')  format('truetype');
 }
 
-.standard-img {
-    display: block !important;
+#logo {
+    font-family: 'retro' !important;
+    font-size: 1.3rem;
+}
+
+#offcanvasMenuLabel {
+    font-family: 'retro' !important;
+}
+
+
+.m-auto {
+    margin: auto;
 }
 
 .small-img {
     display: none !important;
 }
 
+.medium-img {
+    display: none !important;
+}
+
+.standard-img {
+    display: block !important;
+}
+
 @media (max-width: 400px) {
+    #logo {
+        font-size: 1.5em;
+    }
+
     .standard-img {
         display: none !important;
     }
     .small-img {
         display: block !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .medium-img {
+        display: block !important;
+    }
+
+    .medium-img-standard {
+        display: none !important;
     }
 }
