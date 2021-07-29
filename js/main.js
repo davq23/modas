@@ -12,15 +12,7 @@ document.addEventListener('readystatechange', function (event) {
 });
 
 window.onscroll = function (event) {
-    var sections = document.querySelectorAll('section');
-
-    sections.forEach(function (section) {
-        if (Modas80.Utils.inView(section)) {
-            section.classList.add('in-view');
-        } else {
-            section.classList.remove('in-view');
-        }    
-    })
+    
 }
 
 window.addEventListener('hashchange', function (event) {
