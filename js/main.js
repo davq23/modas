@@ -28,11 +28,20 @@ document.addEventListener('readystatechange', function (event) {
 
                 var request = new XMLHttpRequest();
 
-                request.onreadystatechange = function() {
-                    if (request.readyState === request.DONE) {
+                document.getElementById('contactForm').querySelectorAll('input,button', function(element) {
+                    element.disabled = true;
+                })
 
+                request.onreadystatechange = function() {
+                    document.getElementById('contactForm').querySelectorAll('input,button', function(element) {
+                        element.disabled = false;
+                    })                            
+
+                    if (request.readyState === request.DONE) {
                         switch (request.status) {
                             case 200:
+                                document.getElementById('contactForm').reset();
+                                    
                                 toastObject._element.classList.remove('bg-danger', 'text-white');
                                 toastObject._element.classList.add('bg-primary', 'text-white');
 
