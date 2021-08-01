@@ -41,8 +41,7 @@ document.addEventListener('readystatechange', function (event) {
                         switch (request.status) {
                             case 200:
                                 document.getElementById('contactForm').reset();
-                                    
-                                toastObject._element.classList.remove('bg-danger', 'text-white');
+
                                 toastObject._element.classList.add('bg-primary', 'text-white');
 
                                 toastObject._element.
@@ -53,7 +52,7 @@ document.addEventListener('readystatechange', function (event) {
                                 break;
                                 
                             default:
-                                toastObject._element.classList.remove('bg-primary', 'text-white');
+                             
                                 toastObject._element.classList.add('bg-danger', 'text-white');
                                 
                                 toastObject._element.
@@ -77,6 +76,10 @@ document.addEventListener('readystatechange', function (event) {
         default:
             break;
     }
+});
+
+document.getElementById('toastResult').addEventListener('hide.bs.toast', function (event) {
+    this.classList.remove('bg-danger', 'bg-primary');
 });
 
 document.getElementById('imageModal').addEventListener('show.bs.modal', function (event) {
