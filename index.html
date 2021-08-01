@@ -10,7 +10,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="icon" href="assets/casette.png">
 </head>
 
 <body>
@@ -22,13 +25,28 @@
                 Menú
             </a>
         </div>
+        <div class="toast-container position-absolute top-100 end-0">
+            <div class="toast" role="alert" id="resultToast" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto" name="toast-title"></strong>
+                    <small class="text-muted"></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                </div>
+            </div>
+        </div>
     </nav>
+    
     <div class="container">
         <section id="nosotros" class="mt-3 px-3 py-2 bg-light border">
             <h3>Nosotros</h3>
             <p>
                 Esta página está dedicada a la moda y la cultura de la década de los ochenta,
                 con análisis en las tendencias y sucesos que marcaron aquella afamada década.
+            </p>
+            <p>
+                ¡Nos puede dar su feedback en el formulario de contacto en la parte inferior!
             </p>
         </section>
 
@@ -46,7 +64,8 @@
                     </div>
                     <div class="carousel-item">
                         <img src="assets/Moda-de-los-80-1-760x450-small.jpg" class="d-block m-auto small-img" alt="...">
-                        <img src="assets/Moda-de-los-80-1-760x450-standard.jpg" class="d-block m-auto standard-img" alt="...">
+                        <img src="assets/Moda-de-los-80-1-760x450-standard.jpg" class="d-block m-auto standard-img"
+                            alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>Muchos colores</h4>
                             <p>Para remarcar un aire de optimismo y modernidad.</p>
@@ -55,8 +74,8 @@
                     <div class="carousel-item">
                         <img src="assets/2c44c9f560bf10228652ab93c3f04bf1-small.jpg" class="d-block m-auto small-img"
                             alt="...">
-                        <img src="assets/2c44c9f560bf10228652ab93c3f04bf1-standard.jpg" class="d-block m-auto standard-img"
-                            alt="...">
+                        <img src="assets/2c44c9f560bf10228652ab93c3f04bf1-standard.jpg"
+                            class="d-block m-auto standard-img" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>Con chaquetas de blue jean</h4>
                             <p>Los chicos daban una imagen de "bad boy".</p>
@@ -65,8 +84,8 @@
                     <div class="carousel-item">
                         <img src="assets/dc33f14edd978b2332a8fa8a90966dbd-small.jpg" class="d-block m-auto small-img"
                             alt="...">
-                        <img src="assets/dc33f14edd978b2332a8fa8a90966dbd-standard.jpg" class="d-block m-auto standard-img"
-                            alt="...">
+                        <img src="assets/dc33f14edd978b2332a8fa8a90966dbd-standard.jpg"
+                            class="d-block m-auto standard-img" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>Con chaquetas de blue jean</h4>
                             <p>Los chicos daban una imagen de "bad boy".</p>
@@ -90,49 +109,135 @@
             <h3>Tecnología</h3>
             <div class="mt-3 w-100 text-center mb-3">
                 <img src="assets/geek80s.jpg" class="m-auto medium-img" alt="Computadoras y consolas">
-                <img src="assets/5f7cd0da64b70-small.jpg" class="m-auto medium-img-standard" alt="Computadoras y consolas">
+                <img src="assets/5f7cd0da64b70-small.jpg" class="m-auto medium-img-standard"
+                    alt="Computadoras y consolas">
             </div>
             <p class="text-justify">
                 Durante los años ochenta, una buena cantidad de avances tecnológicos se
                 realizaron que beneficiaron, tanto de forma directa como indirecta, a los consumidores.
             </p>
             <p class="text-justify">
-                Las computadoras personales alcanzaron una primera ola de popularidad en esta época, 
+                Las computadoras personales alcanzaron una primera ola de popularidad en esta época,
                 con marcas como Apple, Tandy y Commodore sacando modelos a precios asequibles. Si bien
                 estos se verían eclipsados posteriormente con la salida al mercado de la PC de IBM
                 y sus clones, su irrupción en el mercado preparó el camino
                 para la adopción de computadoras en los hogares alrededor del mundo.
             </p>
             <p class="text-justify">
-                Así mismo, el mercado de los videojuegos llegó a su auge a principios y a finales de la década: 
-                primero con las consolas de Atari, Mattel y Coleco, y otras empresas, cuya falta de control 
+                Así mismo, el mercado de los videojuegos llegó a su auge a principios y a finales de la década:
+                primero con las consolas de Atari, Mattel y Coleco, y otras empresas, cuya falta de control
                 de calidad provocó una crisis en el mercado; y posteriormente con la NES de Nintendo,
                 la cual mantuvo un monopolio casi completo de las ventas de videojuegos hasta principios
                 de los años 90.
             </p>
+            <div class="mt-3 w-100 text-center mb-3">
+                <img src="assets/NES-Console-Set small.png" class="m-auto medium-img" alt="Consola">
+                <img src="assets/NES-Console-Set.png" class="m-auto medium-img-standard" alt="Consola">
+            </div>
+            <p class="text-justify">
+                Paralelamente, por primera vez las personas pueden llevar la música consigo de una forma cómoda
+                con el lanzamiento del Walkman en 1979. La facilidad de regrabar casettes permitió así mismo un
+                control sin precedentes de las listas de reproducción.
+            </p>
+            <div class="mt-3 w-100 text-center mb-3">
+                <img src="assets/220px-Original_Sony_Walkman_TPS-L2-small.jpg" class="m-auto medium-img" alt="Consola">
+                <img src="assets/220px-Original_Sony_Walkman_TPS-L2.jfif" class="m-auto medium-img-standard"
+                    alt="Walkman">
+            </div>
         </section>
-        <section id="politica" class="mt-2">
+        <section id="politica" class="mt-4 bg-light px-3 py-2 border">
             <h3>Política</h3>
+            <div class="mt-3 w-100 text-center mb-3">
+                <img src="assets/e23688b6-b6f4-41cd-9952-7784dac302ab_alta-libre-aspect-ratio_default_0-small.jpg"
+                    class="m-auto medium-img" alt="Consola">
+                <img src="assets/e23688b6-b6f4-41cd-9952-7784dac302ab_alta-libre-aspect-ratio_default_0-standard.jpg"
+                    class="m-auto medium-img-standard" alt="Walkman">
+            </div>
+            <p class="text-justify">
+                Los años 80's marcaron un hito en las relaciones exteriores, al presentarse un acercamiento sin
+                precedentes
+                entre los dos super poderes de la época: la Unión de Repúblicas Socialistas Soviéticas (URSS) y los
+                Estados Unidos de América (EUA). En una guerra silenciosa para extender su influencia alrededor del
+                globo
+                desde la finalización de la Segunda Guerra Mundial (etapa conocida como la "Guerra Fría"), la llegada de
+                Gorbachev al poder del gigante del Este supuso un vuelco importante hacia una relación pacífica entre
+                los
+                dos países.
+            </p>
+            <div class="mt-3 w-100 text-center mb-3">
+                <img src="assets/76047-small.jpg" class="m-auto medium-img" alt="Consola">
+                <img src="assets/76047-standard.jpg" class="m-auto medium-img-standard" alt="Walkman">
+            </div>
+            <p class="text-justify">
+                Con el acercamiento a occidente, un aire de esperanza entró para una gran parte de la población
+                más allá de la cortina de hierro. No obstante, la lentitud de la apertura económica y social
+                abrió el camino para expresiones sociales subversivas al sistema comunista, las cuales culminaron
+                en movilizaciones a favor de la libertad de los países del área de influencia soviética. La más
+                famosa de ellas fue el derrumbe del "Muro de Berlín", una estructura que separaba a Berlín en dos
+                partes: la primera, como capital de la República
+                Federal Alemana de corte liberal, y la segunda, como capital de la República Democrática Alemana
+                aliada con el sistema comunista.
+            </p>
         </section>
-        <section id="literatura" class="mt-2">
-            <h3>Literatura</h3>
+        <section id="contacto" class="mt-4 bg-light px-3 py-2 border">
+            <h3 class="mb-3">Contacto</h3>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="from" class="form-label">Remitente:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <input type="email" class="form-control" name="from" id="fromInput"
+                            aria-describedby="fromId" placeholder="" required>
+                    </div>
+                    <small id="fromId" class="form-text text-muted">Su email</small>
+                </div>
+                <div class="mb-3">
+                    <label for="from" class="form-label">Asunto:</label>
+                    <input type="text" class="form-control" name="from" id="subjectInput"
+                        aria-describedby="subjectId" placeholder="" required>
+                    <small id="subjectId" class="form-text text-muted">Asunto del email</small>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" name="message" id="messageTextArea" rows="10"
+                        aria-describedby="messageId" required>
+                  </textarea>
+                    <small id="messageId" class="form-text text-muted">Cuerpo del email</small>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary w-25" type="submit">Enviar</button>
+                </div>
+            </form>
         </section>
     </div>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" data-bs-scroll="true" aria-labelledby="offcanvasMenuLabel">
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" data-bs-scroll="true"
+        aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasMenuLabel">Super Moda 80's</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body" id="offcanvasMenuItems">
             <nav class="nav flex-column nav-fill nav-pills" id="navbar">
-                <a class="nav-link active" aria-current="page" href="#nosotros"><i class="bi bi-people-fill"></i> Nosotros</a>
+                <a class="nav-link active" aria-current="page" href="#nosotros"><i class="bi bi-people-fill"></i>
+                    Nosotros</a>
                 <a class="nav-link" href="#vestimenta"><i class="fas fa-tshirt"></i> Vestimenta</a>
                 <a class="nav-link" href="#tecnologia"><i class="fas fa-microchip"></i> Tecnología</a>
                 <a class="nav-link" href="#politica"><i class="fas fa-landmark"></i> Política</a>
-                <a class="nav-link" href="#literatura"><i class="fas fa-book"></i> Literatura</a>
-              </nav>
+                <a class="nav-link" href="#contacto"><i class="fas fa-book"></i> Contacto</a>
+            </nav>
         </div>
     </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade w-100" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="" alt="" id="imageModalImg">
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

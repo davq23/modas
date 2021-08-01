@@ -12,7 +12,6 @@
     font-family: 'retro' !important;
 }
 
-
 .m-auto {
     margin: auto;
 }
@@ -25,8 +24,16 @@
     display: none !important;
 }
 
+.pointer-cursor {
+    cursor: pointer;
+}
+
 .standard-img {
     display: block !important;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 @media (max-width: 400px) {
@@ -42,7 +49,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .medium-img {
         display: block !important;
     }
